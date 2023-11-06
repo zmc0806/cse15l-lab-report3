@@ -69,16 +69,22 @@ The fix addresses the issue by correctly creating a new reversed array and retur
 #### Option 1: `-i` (Ignore case)
 
 ```bash
-grep -i "pattern" ./technical/file.txt
+grep -i "background" ./technical/biomed/
+grep: ./technical/biomed/: Is a directory
+
+Background
 ```
 
-This command will search for "pattern" in `file.txt` ignoring the case sensitivity. It's useful when the case of the text is unknown or mixed.
+It's not useful for directory.
 
 ```bash
-grep -i "example" ./technical/documentation.md
+grep -i "example" ./technical/biomed/rr167.txt
+
+        attributed to several factors. For example, an increase in
+        could modify binding to the cell surface. For example,
 ```
 
-Searches for the word "example" in `documentation.md` without considering case.
+Searches for the word "example" in `rr167.txt` without considering case.
 
 #### Option 2: `-r` (Recursive search)
 
@@ -89,38 +95,42 @@ grep -r "pattern" ./technical/
 Recursively search for "pattern" in all files under the `./technical` directory.
 
 ```bash
-grep -r "config" ./technical/config/
+grep -r "config" ./technical/biomed/
 ```
 
-Searches all files in the `./technical/config/` directory for the string "config".
+Searches all files in the `./technical/biomed/` directory for the string "config".
 
 #### Option 3: `-v` (Invert match)
 
 ```bash
-grep -v "pattern" ./technical/logs.txt
+grep -v "background" ./technical/biomed/
+grep: ./technical/biomed/: Is a directory
 ```
 
-This command will print all lines that do not contain the "pattern" in `logs.txt`. It's useful for filtering out unwanted lines.
+It's not useful for directory.
 
 ```bash
-grep -v "error" ./technical/error_logs.txt
+grep -v "era" ./technical/biomed/gb-2003-4-9-r60.txt
 ```
 
-Filters out lines that contain the word "error" in `error_logs.txt`.
+Filters out lines that contain the word "era" in `gb-2003-4-9-r60.txt`.
 
 #### Option 4: `-c` (Count)
 
 ```bash
-grep -c "pattern" ./technical/report.txt
+grep -c "example" technical
+grep: technical: Is a directory
 ```
 
-Counts the number of times "pattern" appears in `report.txt`.
+It's not useful for directory.
 
 ```bash
-grep -c "TODO" ./technical/tasks.md
+
+grep -c "era" technical/biomed/gb-2003-4-9-r60.txt
+35
 ```
 
-Counts how many times "TODO" appears in `tasks.md`, which can be useful for tracking tasks.
+Counts how many times "era" appears in `gb-2003-4-9-r60.txt`, which can be useful for tracking tasks.
 
 ### Sources
 
