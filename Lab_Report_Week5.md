@@ -6,14 +6,14 @@
 
 Here is the JUnit test that induces a failure due to the buggy `reversed` method:
 
-\```java
+```java
 @Test
 public void testReversedFailure() {
   int[] input = {1, 2, 3, 4};
   int[] expected = {4, 3, 2, 1};
   assertArrayEquals(expected, ArrayExamples.reversed(input));
 }
-\```
+```
 
 ### Input That Doesn't Induce Failure
 
