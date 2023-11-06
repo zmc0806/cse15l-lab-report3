@@ -14,6 +14,7 @@ public void testReversedFailure() {
   assertArrayEquals(expected, ArrayExamples.reversed(input));
 }
 ```
+![image](https://raw.githubusercontent.com/zmc0806/cse15L-lab-report3/main/test1.jpeg)
 
 ### Input That Doesn't Induce Failure
 
@@ -27,6 +28,7 @@ public void testReversedNoFailure() {
   assertArrayEquals(expected, ArrayExamples.reversed(input));
 }
 ```
+![image](https://raw.githubusercontent.com/zmc0806/cse15L-lab-report3/main/test2.jpeg)
 
 ### Symptom
 
