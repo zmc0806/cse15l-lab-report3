@@ -101,10 +101,10 @@ grep -r "pattern" ./technical/
 Recursively search for "pattern" in all files under the `./technical` directory.
 
 ```bash
-grep -r "config" ./technical/biomed/
+grep -r "era" ./technical/biomed/gb-2003-4-9-r60.txt
 ```
 
-Searches all files in the `./technical/biomed/` directory for the string "config".
+Searches all word in the `gb-2003-4-9-r60.txt` file for the string contains "era".
 
 #### Option 3: `-v` (Invert match)
 
