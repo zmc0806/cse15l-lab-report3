@@ -134,5 +134,7 @@ Counts how many times "era" appears in `gb-2003-4-9-r60.txt`, which can be usefu
 
 ### Sources
 
-The information for the `grep` command options was obtained from the manual pages (`man grep`) and various online resources. Specific URLs are not provided, but a web search for "grep command-line options" will yield comprehensive guides and examples.
+The information for the `grep` command options was obtained from the manual pages (`man grep`) and various online resources. 
+
+https://man7.org/linux/man-pages/man1/grep.1.html
 
