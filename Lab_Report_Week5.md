@@ -102,23 +102,23 @@ grep -v "pattern" ./technical/logs.txt
 
 This command will print all lines that do not contain the "pattern" in `logs.txt`. It's useful for filtering out unwanted lines.
 
-\```bash
+```bash
 grep -v "error" ./technical/error_logs.txt
-\```
+```
 
 Filters out lines that contain the word "error" in `error_logs.txt`.
 
 #### Option 4: `-c` (Count)
 
-\```bash
+```bash
 grep -c "pattern" ./technical/report.txt
-\```
+```
 
 Counts the number of times "pattern" appears in `report.txt`.
 
-\```bash
+```bash
 grep -c "TODO" ./technical/tasks.md
-\```
+```
 
 Counts how many times "TODO" appears in `tasks.md`, which can be useful for tracking tasks.
 
