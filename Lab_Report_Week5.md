@@ -16,6 +16,8 @@ public void testReversedFailure() {
 ```
 ![image](https://raw.githubusercontent.com/zmc0806/cse15L-lab-report3/main/test1.jpeg)
 
+This picture shows that after I add a test inducing fail,run 3 and fail 1.
+
 ### Input That Doesn't Induce Failure
 
 Here is the JUnit test that does not induce a failure:
@@ -29,6 +31,8 @@ public void testReversedNoFailure() {
 }
 ```
 ![image](https://raw.githubusercontent.com/zmc0806/cse15L-lab-report3/main/test2.jpeg)
+
+This picture shows I add again another test that does not induce a failure.So total run 4 test,and fail 1.
 
 ### Symptom
 
