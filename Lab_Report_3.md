@@ -25,8 +25,8 @@ Here is the JUnit test that does not induce a failure:
 ```java
 @Test
 public void testReversedNoFailure() {
-  int[] input = {};
-  int[] expected = {};
+  int[] input = {1,2,3,4};
+  int[] expected = {1,2,3,4};
   assertArrayEquals(expected, ArrayExamples.reversed(input));
 }
 ```
