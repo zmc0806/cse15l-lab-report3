@@ -19,14 +19,14 @@ public void testReversedFailure() {
 
 Here is the JUnit test that does not induce a failure:
 
-\```java
+```java
 @Test
 public void testReversedNoFailure() {
   int[] input = {};
   int[] expected = {};
   assertArrayEquals(expected, ArrayExamples.reversed(input));
 }
-\```
+```
 
 ### Symptom
 
@@ -36,7 +36,7 @@ The symptom of the failure would be a failed JUnit test indicating that the expe
 
 Here is the buggy version of the `reversed` method:
 
-\```java
+```java
 // BUGGY
 static int[] reversed(int[] arr) {
   int[] newArray = new int[arr.length];
@@ -45,11 +45,11 @@ static int[] reversed(int[] arr) {
   }
   return arr;
 }
-\```
+```
 
 And here is the corrected version of the `reversed` method:
 
-\```java
+```java
 // FIXED
 static int[] reversed(int[] arr) {
   int[] newArray = new int[arr.length];
@@ -58,7 +58,7 @@ static int[] reversed(int[] arr) {
   }
   return newArray;
 }
-\```
+```
 
 The fix addresses the issue by correctly creating a new reversed array and returning it, rather than incorrectly attempting to modify the original array.
 
@@ -68,37 +68,37 @@ The fix addresses the issue by correctly creating a new reversed array and retur
 
 #### Option 1: `-i` (Ignore case)
 
-\```bash
+```bash
 grep -i "pattern" ./technical/file.txt
-\```
+```
 
 This command will search for "pattern" in `file.txt` ignoring the case sensitivity. It's useful when the case of the text is unknown or mixed.
 
-\```bash
+```bash
 grep -i "example" ./technical/documentation.md
-\```
+```
 
 Searches for the word "example" in `documentation.md` without considering case.
 
 #### Option 2: `-r` (Recursive search)
 
-\```bash
+```bash
 grep -r "pattern" ./technical/
-\```
+```
 
 Recursively search for "pattern" in all files under the `./technical` directory.
 
-\```bash
+```bash
 grep -r "config" ./technical/config/
-\```
+```
 
 Searches all files in the `./technical/config/` directory for the string "config".
 
 #### Option 3: `-v` (Invert match)
 
-\```bash
+```bash
 grep -v "pattern" ./technical/logs.txt
-\```
+```
 
 This command will print all lines that do not contain the "pattern" in `logs.txt`. It's useful for filtering out unwanted lines.
 
