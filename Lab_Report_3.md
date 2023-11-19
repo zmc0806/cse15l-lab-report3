@@ -30,6 +30,8 @@ public void testReversedNoFailure() {
   assertArrayEquals(expected, ArrayExamples.reversed(input));
 }
 ```
+Such an array, when reversed, should look the same as the original. However, this test won't expose the bug in the reversed method (assuming the bug is related to handling arrays with more than one element).
+
 ![image](https://raw.githubusercontent.com/zmc0806/cse15L-lab-report3/main/test2.jpeg)
 
 This picture shows I add again another test that does not induce a failure.So total run 4 test,and fail 1.
