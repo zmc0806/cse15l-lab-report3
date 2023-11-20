@@ -82,6 +82,9 @@ grep: ./technical/biomed/: Is a directory
 
 Background
 ```
+Function: Attempts to search for the word "background" in the specified directory.
+
+Utility: This example is not useful as  `grep` does not search directories without additional options.
 
 It's not useful for directory.
 
@@ -91,22 +94,27 @@ grep -i "example" ./technical/biomed/rr167.txt
         attributed to several factors. For example, an increase in
         could modify binding to the cell surface. For example,
 ```
+Function: Searches for the word "example" in the file `rr167.txt`, ignoring case.
 
-Searches for the word "example" in `rr167.txt` without considering case.
+Utility: Useful for finding occurrences of a word regardless of its capitalization.
+
 
 #### Option 2: `-r` (Recursive search)
 
 ```bash
 grep -r "pattern" ./technical/
 ```
+Function: Recursively searches for "pattern" in all files under the ./technical directory.
 
-Recursively search for "pattern" in all files under the `./technical` directory.
+Utility: Beneficial for searching through a hierarchy of directories and files.
+
 
 ```bash
 grep -r "era" ./technical/biomed/gb-2003-4-9-r60.txt
 ```
+Function: Searches for "era" in the file `gb-2003-4-9-r60.txt`.
 
-Searches all word in the `gb-2003-4-9-r60.txt` file for the string contains "era".
+Utility: The `-r` option is redundant for a single file and is generally used for searching through multiple files.
 
 #### Option 3: `-v` (Invert match)
 
@@ -115,13 +123,17 @@ grep -v "background" ./technical/biomed/
 grep: ./technical/biomed/: Is a directory
 ```
 
-It's not useful for directory.
+Function: Attempts to filter out lines containing "background" in the specified directory.
+
+Utility: Not useful since `grep` does not operate on directories without additional options.
 
 ```bash
 grep -v "era" ./technical/biomed/gb-2003-4-9-r60.txt
 ```
 
-Filters out lines that contain the word "era" in `gb-2003-4-9-r60.txt`.
+Function: Excludes lines that contain the word "era" from the file `gb-2003-4-9-r60.txt`.
+
+Utility: Useful for removing specific information or filtering out unwanted data.
 
 #### Option 4: `-c` (Count)
 
@@ -130,7 +142,9 @@ grep -c "example" technical
 grep: technical: Is a directory
 ```
 
-It's not useful for directory.
+Function: Attempts to count occurrences of "example" in the `technical` directory.
+
+Utility: Not useful since `grep` cannot count occurrences in a directory without additional options.
 
 ```bash
 
@@ -138,11 +152,14 @@ grep -c "era" technical/biomed/gb-2003-4-9-r60.txt
 35
 ```
 
-Counts how many times "era" appears in `gb-2003-4-9-r60.txt`, which can be useful for tracking tasks.
+Function: Counts the occurrences of "era" in the file `gb-2003-4-9-r60.txt`.
+
+Utility: Helpful for quantitative analysis, such as counting keyword instances.
 
 ### Sources
 
 The information for the `grep` command options was obtained from the manual pages (`man grep`) and various online resources. 
 
-https://man7.org/linux/man-pages/man1/grep.1.html
+[man7.org Linux grep manual page](https://man7.org/linux/man-pages/man1/grep.1.html)
+
 
